@@ -1,0 +1,206 @@
+﻿
+@font-face {
+    font-family: 'Diavlo_BOLD_II_37';
+    src: url('../fonts/Diavlo_BOLD_II_37.otf') format('opentype');
+}
+
+.diavlo-bold {
+    font-family: 'Diavlo_BOLD_II_37';
+}
+
+@font-face {
+    font-family: 'Diavlo_LIGHT_II_37';
+    src: url('../fonts/Diavlo_LIGHT_II_37.otf') format('opentype');
+}
+
+.diavlo-light {
+    font-family: 'Diavlo_LIGHT_II_37';
+}
+
+@font-face {
+    font-family: 'Diavlo_BLACK_II_37';
+    src: url('../fonts/Diavlo_BLACK_II_37.otf') format('opentype');
+}
+
+.diavlo-black {
+    font-family: 'Diavlo_BLACK_II_37';
+}
+
+@font-face {
+    font-family: 'Idealist Sans';
+    src: url('../fonts/Idealist Sans.ttf') format('truetype');
+}
+
+.idealist-sans {
+    font-family: 'Idealist Sans';
+}
+
+.small-dialog {
+    background: white;
+    padding: 20px 30px;
+    text-align: left;
+    max-width: 400px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.my-mfp-zoom-in .zoom-anim-dialog {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.my-mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.my-mfp-slide-bottom .zoom-anim-dialog {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+    -moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+    -ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+    -o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+    transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+}
+
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+    opacity: 1;
+    -webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+    -moz-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+    -ms-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+    -o-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+    transform: translateY(0) perspective( 600px ) rotateX( 0 );
+}
+
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+    opacity: 0;
+    -webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+    -moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+    -ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+    -o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+    transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+}
+
+.my-mfp-slide-bottom.mfp-bg {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.back-to-top {
+    background: var(--primary);
+}
+
+    .back-to-top:hover {
+        background: var(--primary-dark);
+    }
+
+.back-to-top {
+    border-radius: 50%;
+    bottom: 25px;
+    color: #fff;
+    display: block;
+    font-size: 40px;
+    height: 58px;
+    position: fixed;
+    left: -200px;
+    text-align: center;
+    transition: all 800ms ease 0s;
+    visibility: hidden;
+    width: 60px;
+    line-height: 50px;
+    z-index: 500;
+}
+
+    .back-to-top:focus, .back-to-top:hover {
+        color: #fff;
+        transition: all 800ms ease 0s;
+    }
+
+    .back-to-top.to-top {
+        left: 20px;
+        transition: all 800ms ease 0s;
+        visibility: visible;
+    }
+
+
+.chat-whatsapp.right {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    z-index: 610;
+}
+
+.chat-whatsapp a {
+    float: right;
+    cursor: pointer;
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    background: #65bc54;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff !important;
+}
+
+    .chat-whatsapp a:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
