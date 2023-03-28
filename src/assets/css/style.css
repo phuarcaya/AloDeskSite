@@ -12640,7 +12640,7 @@ textarea.form-control {
 
 .ftco-footer {
     font-size: 16px;
-    background: var(--dark);
+    background: var(--primary-dark);
     padding: 7em 0;
     z-index: 0;
 }

@@ -11,6 +11,7 @@ import { BenefitsComponent } from './components/benefits/benefits.component';
 import { ImplementationMethodComponent } from './components/implementation-method/implementation-method.component';
 import { FrequentQuestionComponent } from './components/frequent-question/frequent-question.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ContactStripComponent } from './components/contact-strip/contact-strip.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ImplementationMethodComponent,
     FrequentQuestionComponent,
     ContactComponent,
+    ContactStripComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -37,6 +39,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ImplementationMethodComponent,
     FrequentQuestionComponent,
     ContactComponent,
+    ContactStripComponent
   ],
 })
 export class SharedModule {}
