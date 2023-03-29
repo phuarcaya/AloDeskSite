@@ -20,44 +20,44 @@
         <div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
 
           <div class="card">
-            <div class="card-header p-0" id="headingCiro" role="tab">
+            <div class="card-header p-0" id="headingOne">
               <h2 class="mb-0">
-                <button href="#collapseCiro"
+                <button href="#collapseOne"
                   class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
-                  data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCiro">
+                  data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
                   <p class="mb-0">Generación de Tickets</p>
                   <i class="fa" aria-hidden="true"></i>
                 </button>
               </h2>
             </div>
-            <div class="collapse" id="collapseCiro" role="tabpanel" aria-labelledby="headingCiro">
+            <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
               <div class="card-body">
-                <p>Generación de tickets (incidencias, requerimientos, cambios, etc.) por cliente usuario o el agente
-                  gestor en base a las solicitudes provenientes de las llamadas teléfonicas, correos electrónicos,
+                <p>Generación de tickets (incidencias, requerimientos, cambios, etc.) por cliente o agente
+                  gestor en base a las solicitudes provenientes por medio de las llamadas teléfonicas, correos electrónicos,
                   WhatsApp, etc.</p>
               </div>
             </div>
           </div>
 
           <div class="card">
-            <div class="card-header p-0" id="headingOne">
+            <div class="card-header p-0" id="headingTwo">
               <h2 class="mb-0">
-                <button href="#collapseOne"
-                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
-                  data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne">
+                <button href="#collapseTwo"
+                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+                  data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
                   <p class="mb-0">Gestión de Tickets</p>
                   <i class="fa" aria-hidden="true"></i>
                 </button>
               </h2>
             </div>
-            <div class="collapse" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+            <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
               <div class="card-body py-3 px-0">
                 <p class="py-3 px-3">Gestión y seguimiento del estado de tickets:</p>
                 <ol>
                   <li>Priorización de tickets</li>
                   <li>Asignación al equipo de soporte</li>
                   <li>Actualización de la situación y/o estado</li>
-                  <li>Visualización del estado</li>
+                  <li>Visualización del estado que se encuentra</li>
                   <li>Visualización de tickets activos</li>
                   <li>Tiempo de duración de atención</li>
                 </ol>
@@ -69,14 +69,14 @@
             <div class="card-header p-0" id="headingThree" role="tab">
               <h2 class="mb-0">
                 <button href="#collapseThree"
-                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
                   data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
                   <p class="mb-0">Catálogo de Servicios TI</p>
                   <i class="fa" aria-hidden="true"></i>
                 </button>
               </h2>
             </div>
-            <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingThree">
               <div class="card-body py-3 px-0">
                 <ol>
                   <li>Clasificación de servicios por categoria</li>
@@ -84,7 +84,7 @@
                   <li>Catálogo de servicios relacionados a requerimientos</li>
                   <li>Definición de requisitos para cada servicio</li>
                   <li>Definición SLA de servicio</li>
-                  <li>Paramtrización de nivel de prioridad</li>
+                  <li>Parametrización de nivel de prioridad</li>
                 </ol>
               </div>
             </div>
@@ -94,14 +94,14 @@
             <div class="card-header p-0" id="headingFour" role="tab">
               <h2 class="mb-0">
                 <button href="#collapseFour"
-                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
                   data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
                   <p class="mb-0">Priorización de Tickets SLA</p>
                   <i class="fa" aria-hidden="true"></i>
                 </button>
               </h2>
             </div>
-            <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingFour">
               <div class="card-body">
                 <p>Permite la priorización de tickets por nivel de complejidad (baja, media y alta).</p>
               </div>
@@ -112,16 +112,16 @@
             <div class="card-header p-0" id="headingFive" role="tab">
               <h2 class="mb-0">
                 <button href="#collapseFive"
-                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
                   data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFive">
                   <p class="mb-0">Base Faq's de preguntas frecuentes</p>
                   <i class="fa" aria-hidden="true"></i>
                 </button>
               </h2>
             </div>
-            <div class="collapse" id="collapseFive" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="collapse" id="collapseFive" role="tabpanel" aria-labelledby="headingFive">
               <div class="card-body">
-                <p>Configuración y consulta de Base Faq's a preguntas frecuentes a las soluciones comunes que fueron
+                <p>Configuración y consulta de Base Faq's a preguntas frecuentes de soluciones comunes que fueron
                   atendidos anteriormente.</p>
               </div>
             </div>
@@ -131,14 +131,14 @@
             <div class="card-header p-0" id="headingSix" role="tab">
               <h2 class="mb-0">
                 <button href="#collapseSix"
-                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
                   data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSix">
                   <p class="mb-0">Asignación de Tickets al equipo de soporte</p>
                   <i class="fa" aria-hidden="true"></i>
                 </button>
               </h2>
             </div>
-            <div class="collapse" id="collapseSix" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="collapse" id="collapseSix" role="tabpanel" aria-labelledby="headingSix">
               <div class="card-body">
                 <p>Cuenta con una bandeja de gestión de tickets donde un gestor puede asignar los tickets a los
                   responsables de soporte y atención al cliente.</p>
@@ -150,7 +150,7 @@
             <div class="card-header p-0" id="headingSeven" role="tab">
               <h2 class="mb-0">
                 <button href="#collapseSeven"
-                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
                   data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSeven">
                   <p class="mb-0">Tablero de indicadores estadísticos</p>
                   <i class="fa" aria-hidden="true"></i>
@@ -163,7 +163,7 @@
                   como:</p>
                 <ol>
                   <li>Total de tickets generados durante el día, mes y año</li>
-                  <li># de tickets por estado: registrado, en proceso de atención, solucionados y cerrados</li>
+                  <li># de tickets por estado: registrado, en proceso de atención, solucionado y cerrado</li>
                   <li># de tickets generados por su clasificación y/o tipo (incidentes, solicitudes, etc.)</li>
                   <li># de tickets solicitados por prioridad (alta, media y baja)</li>
                   <li># de tickets solicitados por canal y/o origen (llamada teléfonico, correo electrónico, etc.)</li>
@@ -179,16 +179,34 @@
             <div class="card-header p-0" id="headingEight" role="tab">
               <h2 class="mb-0">
                 <button href="#collapseEight"
-                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
                   data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseEight">
-                  <p class="mb-0">Gestión de accesos</p>
+                  <p class="mb-0">Linea de tiempo</p>
                   <i class="fa" aria-hidden="true"></i>
                 </button>
               </h2>
             </div>
             <div class="collapse" id="collapseEight" role="tabpanel" aria-labelledby="headingEight">
               <div class="card-body">
-                <p>Control de nivel de acceso a equipo gestor y cliente usuario. Posee una opción de gestión de
+                <p>Visualización del proceso completo de atención de un ticket. Desde la creación hasta la fecha y hora que fue cerrado.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header p-0" id="headingNine" role="tab">
+              <h2 class="mb-0">
+                <button href="#collapseNine"
+                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link collapsed"
+                  data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseNine">
+                  <p class="mb-0">Gestión de accesos</p>
+                  <i class="fa" aria-hidden="true"></i>
+                </button>
+              </h2>
+            </div>
+            <div class="collapse" id="collapseNine" role="tabpanel" aria-labelledby="headingNine">
+              <div class="card-body">
+                <p>Control de nivel de acceso al agente gestor de tickets y cliente usuario. Posee una opción de gestión de
                   usuarios donde se habilitan los permisos a cada usuario.</p>
               </div>
             </div>
