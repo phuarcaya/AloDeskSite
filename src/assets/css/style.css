@@ -11886,7 +11886,8 @@ h1, h2, h3, h4, h5,
 
         .slider-text p.line:after {
             position: absolute;
-            bottom: 8px;
+            /* bottom: 8px; */
+            bottom: 0px;
             left: 0;
             content: '';
             width: 40px;
