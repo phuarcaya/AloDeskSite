@@ -13,6 +13,7 @@ export class FooterComponent implements OnInit {
   instagramPage = '';
   webSite = '';
   titleSite = '';
+  currentYear='';
 
   constructor() {
     this.phoneContact = globalConstanst.phoneContact;
@@ -21,6 +22,7 @@ export class FooterComponent implements OnInit {
     this.instagramPage = globalConstanst.instagramPage;
     this.webSite = globalConstanst.webSite;
     this.titleSite = globalConstanst.titleSite;
+    this.currentYear = new Date().getFullYear().toString();
   }
 
   ngOnInit(): void {}

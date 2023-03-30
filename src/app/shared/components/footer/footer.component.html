@@ -12,22 +12,14 @@
       </div>
 
       <div class="col-md">
-        <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">Mapa de sitio</h2>
-          <ul class="list-unstyled">
-            <li><a href="#acerca-del-software" class="py-2 d-block">Características</a></li>
-            <li><a href="#acerca-del-software" class="py-2 d-block">Beneficios</a></li>
-            <li><a href="#acerca-del-software" class="py-2 d-block">Contáctanos</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md">
         <div class="ftco-footer-widget mb-4 ml-md-5">
           <h2 class="ftco-heading-2">Explorar</h2>
           <ul class="list-unstyled">
-            <li><a href="#acerca-del-software" class="py-2 d-block">Acerca de</a></li>
-            <li><a href="#acerca-del-software" class="py-2 d-block">Blogs</a></li>
-            <li><a href="#acerca-del-software" class="py-2 d-block">Planes &amp; Precios</a></li>
+            <li><a [routerLink]="['/acerca-de']" class="py-2 d-block">Acerca de</a></li>
+            <li><a [routerLink]="['/funciones']" class="py-2 d-block">¿Cómo funciona?</a></li>
+            <li><a [routerLink]="['/metodo-implementacion']" class="py-2 d-block">Método de Implementación</a></li>
+            <li><a [routerLink]="['/contactanos']" class="py-2 d-block">Contáctanos</a></li>
+            <li><a [routerLink]="['/contactanos']" class="py-2 d-block">Solicitar Demostración</a></li>
           </ul>
         </div>
       </div>
@@ -56,7 +48,7 @@
       <div class="col-md-12 text-center">
         <p>
           Copyright &copy;
-          2023 Todos los derechos reservados | Alódesk <i class="fa fa-dribbble" aria-hidden="true"></i> <a
+          {{currentYear}} Todos los derechos reservados <i class="fa fa-dribbble" aria-hidden="true"></i> <a
             href="{{webSite}}">{{titleSite}}</a>
         </p>
       </div>
