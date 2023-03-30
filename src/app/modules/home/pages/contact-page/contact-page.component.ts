@@ -1,13 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { globalConstanst } from 'src/app/shared/globals/global-constanst';
 
 @Component({
   selector: 'app-contact-page',
   templateUrl: './contact-page.component.html',
-  styleUrls: ['./contact-page.component.css']
+  styleUrls: ['./contact-page.component.css'],
 })
 export class ContactPageComponent implements OnInit {
+  phoneContact = '';
+  emailContact = '';
+  whatsAppChat = '';
 
-  constructor() { }
+  constructor() {
+    this.phoneContact = globalConstanst.phoneContact;
+    this.emailContact = globalConstanst.emailContact;
+    this.whatsAppChat = globalConstanst.whatsAppChat;
+  }
 
   ngOnInit(): void {
     this.loadJsFile('assets/js/main.js');

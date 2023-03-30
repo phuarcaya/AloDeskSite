@@ -14,7 +14,60 @@
     </div>
   </div>
 </section>
-<app-contact></app-contact>
+
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="wrapper px-md-4">
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="dbox w-100 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="fa fa-map-marker"></span>
+                </div>
+                <div class="text">
+                  <p>Atendemos a todos los paises</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="dbox w-100 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="fa fa-phone"></span>
+                </div>
+                <div class="text">
+                  <p><span>Teléfono: </span> <a href="tel://{{phoneContact}}">{{phoneContact}}</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="dbox w-100 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="fa fa-paper-plane"></span>
+                </div>
+                <div class="text">
+                  <p><span>Email: </span> <span class="text-primary">{{emailContact}}</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="dbox w-100 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="fa fa-whatsapp"></span>
+                </div>
+                <div class="text">
+                  <p><span>WhatsApp: </span> <a href="{{whatsAppChat}}" target="_blank">{{phoneContact}}</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <app-contact-strip></app-contact-strip>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

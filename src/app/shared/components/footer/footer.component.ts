@@ -13,7 +13,10 @@ export class FooterComponent implements OnInit {
   instagramPage = '';
   webSite = '';
   titleSite = '';
-  currentYear='';
+  currentYear = '';
+  urlBillarsoft = '';
+  urlOlineShop = '';
+  urlElefac = '';
 
   constructor() {
     this.phoneContact = globalConstanst.phoneContact;
@@ -22,6 +25,10 @@ export class FooterComponent implements OnInit {
     this.instagramPage = globalConstanst.instagramPage;
     this.webSite = globalConstanst.webSite;
     this.titleSite = globalConstanst.titleSite;
+    this.urlBillarsoft = globalConstanst.urlBillarsoft;
+    this.urlOlineShop = globalConstanst.urlOlineShop;
+    this.urlElefac = globalConstanst.urlElefac;
+
     this.currentYear = new Date().getFullYear().toString();
   }
 
